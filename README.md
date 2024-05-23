@@ -20,3 +20,12 @@
 - Netflix+GPT
      - Search Bar
      - Movie Suggestions     
+
+
+
+# To Push Your Code On Github
+
+- step -1 : git init
+- step- 2: git add . (to add all folder ) 
+- step-3: git commit -m "message " 
+- step-4: git push -u origin main
