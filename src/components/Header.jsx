@@ -52,7 +52,7 @@ const Header = () => {
 }, [])
 
   return (
-    <div className="flex px-4 py-2 bg-gradient-to-b from-black justify-between items-center ">
+    <div className=" absolute w-screen flex px-8 py-2 bg-gradient-to-b from-black z-10 justify-between  ">
       <div className="ml-4">
         <img 
           className="w-28 sm:w-44" // Adjusted width for smaller screens
@@ -60,8 +60,8 @@ const Header = () => {
           alt="netflix logo"
         />
       </div>
-      <div className="flex gap-4 sm:gap-8 mr-4"> 
-        <select className="bg-black bg-opacity-50 text-white border border-white w-24 sm:w-[110px] text-center"> 
+      <div className="flex gap-4 sm:gap-8 mr-4 p-5"> 
+        <select className="bg-black bg-opacity-50 text-white border border-white w-20 sm:w-[110px] text-center"> 
           <option value="">English</option>
           <option value="">Hindi</option>
         </select>
@@ -69,7 +69,7 @@ const Header = () => {
         { user ? 
         (
           <img 
-          className="w-8 sm:w-18" // Adjusted width for smaller screens
+          className="w-8 sm:w-18 rounded-lg" // Adjusted width for smaller screens
           src="https://avatars.githubusercontent.com/u/81612600?s=400&u=8df03c92bb2a8cbc3a1c1334fa8a632d5105265e&v=4" 
           alt="user profile"
         />  
