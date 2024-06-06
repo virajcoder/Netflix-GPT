@@ -10,6 +10,6 @@ const MovieCard = ({ posterPath }) => {
   );
 };
 MovieCard.propTypes = {
-    posterPath : PropTypes.number.isRequired,
+    posterPath : PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   };
 export default MovieCard;

@@ -18,14 +18,14 @@ const VideoBackground = ({movieId}) => {
         }
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        
       ></iframe>
     </div>
   );
 };
 
 VideoBackground.propTypes = {
-  movieId: PropTypes.number.isRequired
+  movieId: PropTypes.oneOfType([PropTypes.number]).isRequired
 };
 
 export default VideoBackground;

@@ -19,8 +19,8 @@ const VideoTitle = ({title, overview}) => {
   };
 
   VideoTitle.propTypes = {
-    title : PropTypes.number.isRequired,
-    overview : PropTypes.number.isRequired
+    title : PropTypes.oneOfType([PropTypes.string]).isRequired,
+    overview : PropTypes.oneOfType([PropTypes.string]).isRequired
   };
   
   export default VideoTitle;

@@ -16,7 +16,7 @@ export const MovieList = ({ title, movies }) => {
   );
 };
 MovieList.propTypes = {
-  title : PropTypes.number.isRequired,
-  movies : PropTypes.number.isRequired
+  title : PropTypes.oneOfType([PropTypes.string]).isRequired,
+  movies :PropTypes.oneOfType([PropTypes.string]).isRequired
 };
 export default MovieList;
