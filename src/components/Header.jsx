@@ -64,14 +64,14 @@ const handleLanguageChange = (e) => {
 };
 
   return (
-    <div className=" absolute w-screen flex px-8 py-2 bg-gradient-to-b from-black z-10 justify-between  ">
-      <div className="ml-4">
+    <div className=" absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+     
         <img 
-          className="w-28 sm:w-44" // Adjusted width for smaller screens
+          className="w-28 sm:w-44 mx-auto md:mx-0" 
           src={Netflix_Logo_PMS} 
           alt="netflix logo"
         />
-      </div>
+      
       <div className="flex gap-4 sm:gap-8 mr-4 p-5"> 
         { showGptSearch && <select 
         className="bg-black bg-opacity-50 text-white border border-white w-20 sm:w-[110px] text-center"
@@ -85,20 +85,20 @@ const handleLanguageChange = (e) => {
         <div className="flex gap-1 sm:gap-2 mr-1">
         {user && <button 
               onClick={handleGptSearchClick}
-              className="bg-purple-700 p-1 rounded-lg w-20 sm:w-[90px] text-white hover:bg-purple-800 mr-4">
+              className="bg-purple-700  rounded-lg  text-white hover:bg-purple-800 mr-4 px-4">
                {showGptSearch ? "Homepage" : "GPT Search"}
           </button>}
 
         { user ? 
         (
           <img 
-          className="w-8 sm:w-18 rounded-lg" // Adjusted width for smaller screens
+          className="w-8 sm:w-18 rounded-lg"
           src="https://avatars.githubusercontent.com/u/81612600?s=400&u=8df03c92bb2a8cbc3a1c1334fa8a632d5105265e&v=4" 
           alt="user profile"
         />  
         ):(
           <img 
-          className="w-13 sm:w-29" // Adjusted width for smaller screens
+          className="w-13 sm:w-29" 
           src={use_avtar} 
           alt="netflix logo"
         />

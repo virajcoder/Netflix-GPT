@@ -11,6 +11,8 @@ import { updateProfile, createUserWithEmailAndPassword , signInWithEmailAndPassw
 import { auth } from "../utils/firebase"; 
 import { useDispatch } from "react-redux";
 import {addUser} from "../utils/userSlice"
+import Footer from "./Footer";
+
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -108,13 +110,14 @@ const Login = () => {
   return (
     <div >
       <Header />
-      <div className="absolute">
+     
+      <div className="w-screen absolute">
         <img src={netflix_background} alt="netflix logo" 
-        className="w-full  bg-cover" />
+        className="w-screen h-screen object-cover" />
         
       </div>
       <form onSubmit={(e) => e.preventDefault()}
-      className="w-3/12 absolute  mx-auto p-12 bg-black bg-opacity-80 my-36 right-0 left-0 text-white rounded-lg">
+      className="w-full md:w-3/12 absolute p-12 bg-black my-24 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80">
         <h1 className="font-bold text-3xl py-4 m-2">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
@@ -185,13 +188,12 @@ const Login = () => {
             {isSignInForm ? "Sign Up Now" : "Already Registered? Sign In Now"}
           </span>
         </h1>
-        <p className="text-xs p-3 m-3">
-          This page is protected by Google reCAPTCHA to ensure you are not a bot.{" "}
-          <span className="text-sky-600 cursor-pointer">Learn more.</span>
-        </p>
+       
       </form>
+      <Footer />
     </div>
   );
+  
 }
 
 export default Login
