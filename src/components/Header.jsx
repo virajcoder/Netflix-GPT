@@ -1,4 +1,4 @@
-import Netflix_Logo_PMS from "../../src/assets/Netflix_Logo_PMS.png"
+import Netflix_Logo_PM from "../../src/assets/Netflix_Logo_PM.png"
 import use_avtar from "../../src/assets/use_avtar.png"
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase"; 
@@ -68,7 +68,7 @@ const handleLanguageChange = (e) => {
      
         <img 
           className="w-28 sm:w-44 mx-auto md:mx-0" 
-          src={Netflix_Logo_PMS} 
+          src={Netflix_Logo_PM} 
           alt="netflix logo"
         />
       

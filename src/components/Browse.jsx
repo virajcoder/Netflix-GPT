@@ -8,16 +8,20 @@ import GptSearch from "./GptSearch"
 import { useSelector } from "react-redux";
 import Footer from "./Footer";
 import ShimmerEffect from "./ShimmerEffect.jsx";
+import useTopRatedMovie from "../hooks/useTopRatedMovie";
+
 
 
 
 const Browse = () => {
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
-
+  
   useNowPlayingMovies();
   usePopularMovies();
   useUpcomingMovies();
+  useTopRatedMovie();
+ 
 
   return (
     <div className="w-screen overflow-hidden">
