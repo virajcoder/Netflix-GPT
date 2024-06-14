@@ -14,6 +14,8 @@ const GptSearchBar = () => {
   const searchText = useRef(null);
   const [error, setError] = useState(null); 
   const genAI = new GoogleGenerativeAI(GEMINI_KEY);
+  const genAII = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_KEY);
+
 
 //   search movie in TMDB
   const searchMovieTMDB = async (movie) => {
@@ -86,6 +88,7 @@ const GptSearchBar = () => {
     }
 
     try {
+      console.log(genAII,genAII,"hello")
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
       const prompt =
         "Act as a movie recommendation system and suggest some movies for the query" +
