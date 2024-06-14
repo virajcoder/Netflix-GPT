@@ -22,7 +22,7 @@ const Watch = (movieId) => {
       API_OPTION
     );
     const json = await data.json();
-    console.log(json)
+    // console.log(json)
     const filterData = json.results.filter((video) => video.type === "Trailer");
     const trailer = filterData.length ? filterData[0] : json.results[0]
     dispatch(addTrailerVideo(trailer));
@@ -44,9 +44,9 @@ const Watch = (movieId) => {
 
       const media = await response.json();
       setRecommendations(media.results);
-      console.log(media)
+      // console.log(media)
     } catch (error) {
-      console.error("Error fetching data:", error);
+      // console.error("Error fetching data:", error);
      
     }
   };

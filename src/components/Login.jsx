@@ -37,8 +37,8 @@ const Login = () => {
  
   // validate the data
   const handleButtonClick =() => {
-    console.log(email.current.value)
-    console.log(password.current.value)
+    // console.log(email.current.value)
+    // console.log(password.current.value)
     // console.log(name.current.value)
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
@@ -68,11 +68,11 @@ const Login = () => {
                   }))
     }).catch((error) => {
       setErrorMessage(error.message);
-      console.log(error,"profile ka error")
+      // console.log(error,"profile ka error")
       // An error occurred
       // ...
     });
-    console.log(user, "signup ka error")
+    // console.log(user, "signup ka error")
   })
   .catch((error) => {
     const errorCode = error.code;
