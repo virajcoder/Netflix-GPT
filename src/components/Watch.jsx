@@ -60,10 +60,10 @@ const Watch = (movieId) => {
     <>
     <div className="absolute  px-8 py-2 bg-gradient-to-b from-black flex flex-col md:flex-row  top-0 left-0  w-full  z-50">
       <a href="/" className=" text-white">
-        <img className="w-44 mx-auto m  md:mx-0 " src={Netflix_Logo_PM} alt="logo" />
+        <img className="w-60 mx-auto m  md:mx-0 " src={Netflix_Logo_PM} alt="logo" />
       </a>
       </div>
-      <div className=" md:h-screen w-full">
+      <div className=" md:h-screen min-w-full max-w-full mt-[-4rem]">
         <iframe
           className="h-[416px] md:h-[calc(100%-0px)] w-full pt-[118px] md:pt-[70px]"
           src={"https://www.youtube.com/embed/" +
@@ -75,7 +75,7 @@ const Watch = (movieId) => {
         ></iframe>
       </div>
 
-      <div className="p-4 m-4 bg-black text-white bg-opacity-90">
+      <div className="  bg-black text-white bg-opacity-90">
       <MovieList title="Recommendations" movies={recommendations} />
       </div>
     </>

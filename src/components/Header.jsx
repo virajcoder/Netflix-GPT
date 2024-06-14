@@ -67,7 +67,7 @@ const handleLanguageChange = (e) => {
     <div className=" absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
      
         <img 
-          className="w-28 sm:w-44 mx-auto md:mx-0" 
+          className="w-60 sm:w-50 mx-auto md:mx-0" 
           src={Netflix_Logo_PM} 
           alt="netflix logo"
         />

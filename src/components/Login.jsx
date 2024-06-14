@@ -11,7 +11,6 @@ import { updateProfile, createUserWithEmailAndPassword , signInWithEmailAndPassw
 import { auth } from "../utils/firebase"; 
 import { useDispatch } from "react-redux";
 import {addUser} from "../utils/userSlice"
-import Footer from "./Footer";
 
 
 const Login = () => {
@@ -113,7 +112,7 @@ const Login = () => {
      
       <div className="w-screen absolute">
         <img src={netflix_background} alt="netflix logo" 
-        className="w-screen h-screen object-cover" />
+        className="w-screen h-[130vh] object-cover" />
         
       </div>
       <form onSubmit={(e) => e.preventDefault()}
@@ -190,7 +189,7 @@ const Login = () => {
         </h1>
        
       </form>
-      <Footer />
+      
     </div>
   );
   
