@@ -1,4 +1,4 @@
-import boxshot from "../assets/boxshot.png";
+import Netflix_Logo_PM from "../assets/Netflix_Logo_PM.png";
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-screen max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="flex items-center flex-col md:flex-row justify-between">
           <a href="#!" className="flex items-center mb-6 md:mb-2">
-            <img src={boxshot} className="h-8 mr-3" alt="Logo" />
+            <img src={Netflix_Logo_PM} className="h-8 mr-3" alt="Logo" />
           </a>
           <ul className="flex flex-wrap items-center mb-2 text-sm font-medium text-gray-500">
             <li>
